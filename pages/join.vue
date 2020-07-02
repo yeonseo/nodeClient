@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Nav />
-      <h1>Welcome Join!!! 😁</h1>
+      <h1 class="title">Welcome Join!!! 😁</h1>
       <form v-if="!$store.state.authUser" @submit.prevent="join">
         <p v-if="formError" class="error">
           {{ formError }}
@@ -60,11 +60,3 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  padding: 100px;
-}
-.error {
-  color: red;
-}
-</style>

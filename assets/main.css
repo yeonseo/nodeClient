@@ -36,3 +36,11 @@ padding-bottom: 15px;
 .links {
 padding-top: 15px;
 }
+
+.green {
+  color: #00C48D;
+}
+
+.error {
+  color: red;
+}

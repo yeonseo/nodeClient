@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Nav />
-      <h1>Please login to see the secret content</h1>
+      <h1 class="title">Please login to see the secret content</h1>
       <form v-if="!$store.state.authUser" @submit.prevent="login">
         <p v-if="formError" class="error">
           {{ formError }}
@@ -64,12 +64,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.container {
-  padding: 100px;
-}
-.error {
-  color: red;
-}
-</style>
